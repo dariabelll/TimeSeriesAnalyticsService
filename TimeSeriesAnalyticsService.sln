@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSeriesAnalyticsService", "TimeSeriesAnalyticsService\TimeSeriesAnalyticsService.csproj", "{DAED96F5-B46F-4211-AE90-C1FD26DF3A26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSeriesAnalyticsService.Application", "TimeSeriesAnalyticsService.Application\TimeSeriesAnalyticsService.Application.csproj", "{64A28CE2-0CF8-428E-B324-A66C72BD0C7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSeriesAnalyticsService.Domain", "TimeSeriesAnalyticsService.Domain\TimeSeriesAnalyticsService.Domain.csproj", "{19A88C1C-988E-486E-AF2C-2CC1083E94DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSeriesAnalyticsService.Infrastructure", "TimeSeriesAnalyticsService.Infrastructure\TimeSeriesAnalyticsService.Infrastructure.csproj", "{4382DF34-CADE-4F30-8010-90DF74D404BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAED96F5-B46F-4211-AE90-C1FD26DF3A26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAED96F5-B46F-4211-AE90-C1FD26DF3A26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAED96F5-B46F-4211-AE90-C1FD26DF3A26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAED96F5-B46F-4211-AE90-C1FD26DF3A26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64A28CE2-0CF8-428E-B324-A66C72BD0C7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64A28CE2-0CF8-428E-B324-A66C72BD0C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64A28CE2-0CF8-428E-B324-A66C72BD0C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64A28CE2-0CF8-428E-B324-A66C72BD0C7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19A88C1C-988E-486E-AF2C-2CC1083E94DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19A88C1C-988E-486E-AF2C-2CC1083E94DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19A88C1C-988E-486E-AF2C-2CC1083E94DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19A88C1C-988E-486E-AF2C-2CC1083E94DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4382DF34-CADE-4F30-8010-90DF74D404BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4382DF34-CADE-4F30-8010-90DF74D404BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4382DF34-CADE-4F30-8010-90DF74D404BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4382DF34-CADE-4F30-8010-90DF74D404BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

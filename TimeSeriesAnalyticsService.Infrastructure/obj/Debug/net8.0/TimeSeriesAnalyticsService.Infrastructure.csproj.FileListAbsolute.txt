@@ -1,0 +1,11 @@
+C:\Users\123\Desktop\TimeSeriesAnalyticsService\TimeSeriesAnalyticsService.Infrastructure\bin\Debug\net8.0\TimeSeriesAnalyticsService.Infrastructure.deps.json
+C:\Users\123\Desktop\TimeSeriesAnalyticsService\TimeSeriesAnalyticsService.Infrastructure\bin\Debug\net8.0\TimeSeriesAnalyticsService.Infrastructure.dll
+C:\Users\123\Desktop\TimeSeriesAnalyticsService\TimeSeriesAnalyticsService.Infrastructure\bin\Debug\net8.0\TimeSeriesAnalyticsService.Infrastructure.pdb
+C:\Users\123\Desktop\TimeSeriesAnalyticsService\TimeSeriesAnalyticsService.Infrastructure\obj\Debug\net8.0\TimeSeriesAnalyticsService.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\123\Desktop\TimeSeriesAnalyticsService\TimeSeriesAnalyticsService.Infrastructure\obj\Debug\net8.0\TimeSeriesAnalyticsService.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\123\Desktop\TimeSeriesAnalyticsService\TimeSeriesAnalyticsService.Infrastructure\obj\Debug\net8.0\TimeSeriesAnalyticsService.Infrastructure.AssemblyInfo.cs
+C:\Users\123\Desktop\TimeSeriesAnalyticsService\TimeSeriesAnalyticsService.Infrastructure\obj\Debug\net8.0\TimeSeriesAnalyticsService.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\123\Desktop\TimeSeriesAnalyticsService\TimeSeriesAnalyticsService.Infrastructure\obj\Debug\net8.0\TimeSeriesAnalyticsService.Infrastructure.dll
+C:\Users\123\Desktop\TimeSeriesAnalyticsService\TimeSeriesAnalyticsService.Infrastructure\obj\Debug\net8.0\refint\TimeSeriesAnalyticsService.Infrastructure.dll
+C:\Users\123\Desktop\TimeSeriesAnalyticsService\TimeSeriesAnalyticsService.Infrastructure\obj\Debug\net8.0\TimeSeriesAnalyticsService.Infrastructure.pdb
+C:\Users\123\Desktop\TimeSeriesAnalyticsService\TimeSeriesAnalyticsService.Infrastructure\obj\Debug\net8.0\ref\TimeSeriesAnalyticsService.Infrastructure.dll
