@@ -1,4 +1,4 @@
-namespace TimeSeriesAnalyticsService.Application.Services;
+namespace TimeSeriesAnalyticsService.Application.Services.Executions;
 
 public sealed class CsvValidationException : Exception
 {
