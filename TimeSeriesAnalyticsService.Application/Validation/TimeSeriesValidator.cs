@@ -1,7 +1,7 @@
 using FluentValidation;
 using TimeSeriesAnalyticsService.Domain.Models;
 
-namespace TimeSeriesAnalyticsServices.Application.Validation;
+namespace TimeSeriesAnalyticsService.Application.Validation;
 
 public sealed class TimeSeriesValidator: AbstractValidator<TimeSeriesValue>
 {
@@ -9,6 +9,12 @@ public sealed class TimeSeriesValidator: AbstractValidator<TimeSeriesValue>
 
     public TimeSeriesValidator()
     {
+        RuleFor(x => x.Date).NotNull().WithMessage("Date is required");
+
+        RuleFor(x => x.ExecutionTimeSeconds).NotNull().WithMessage("Execution time is required");
+
+        RuleFor(x => x.Value).NotNull().WithMessage("Value is required");
+
         RuleFor(x => x.Date).GreaterThanOrEqualTo(MinAllowedDateUtc).WithMessage("Date must be greater than 2000-01-01");
 
         RuleFor(x => x.Date).LessThanOrEqualTo(DateTimeOffset.UtcNow).WithMessage("Date must be less than current date");
