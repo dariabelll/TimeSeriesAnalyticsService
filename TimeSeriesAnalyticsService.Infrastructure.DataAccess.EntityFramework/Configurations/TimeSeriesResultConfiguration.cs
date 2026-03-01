@@ -56,9 +56,13 @@ public sealed class TimeSeriesResultConfiguration : IEntityTypeConfiguration<Tim
             .HasColumnName("RowCount")
             .IsRequired();
 
-        builder.Property(x => x.UploadedAt)
-            .HasColumnName("UploadedAt")
+        builder.Property(x => x.UpdatedAt)
+            .HasColumnName("UpdatedAt")
             .HasColumnType("timestamptz")
             .IsRequired();
+
+        builder.HasIndex(x => x.FirstStart);
+        builder.HasIndex(x => x.AverageValue);
+        builder.HasIndex(x => x.AverageExecutionTimeSeconds);
     }
 }

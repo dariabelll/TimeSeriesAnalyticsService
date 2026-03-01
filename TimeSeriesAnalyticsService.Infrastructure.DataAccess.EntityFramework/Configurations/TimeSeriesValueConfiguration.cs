@@ -36,5 +36,7 @@ public sealed class TimeSeriesValueConfiguration : IEntityTypeConfiguration<Time
             .HasColumnName("Value")
             .HasColumnType("double precision")
             .IsRequired();
+
+        builder.HasIndex(x => new { x.FileName, x.Date });
     }
 }
