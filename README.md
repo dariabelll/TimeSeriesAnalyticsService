@@ -122,9 +122,7 @@ Date;ExecutionTime;Value
 
 3. Настроить строку подключения:
 
-    Скопировать файл:
-
-    copy appsettings.Development.example.json appsettings.Development.json
+    Скопировать файл appsettings.Development.example.json в appsettings.Development.json
 
     Открыть appsettings.Development.json и указать пароль PostgreSQL:
 
@@ -139,15 +137,15 @@ Date;ExecutionTime;Value
     Заменить YOUR_PASSWORD на реальный пароль.
 
 4. Запустить проект:
-
+    ```
     dotnet run
-
+    ```
 5. Открыть Swagger:
 
     После запуска в консоли будет указан адрес приложения. Swagger доступен по адресу:
-
+    ```
     http://localhost:<port>/swagger
-
+    ```
     Порт можно посмотреть в консоли после выполнения dotnet run.
 
 ---
@@ -155,14 +153,14 @@ Date;ExecutionTime;Value
 ## Примеры запросов
 
 Импорт CSV:
-
-curl -F "file=@test.csv" http://localhost:\<port>/api/import/test1
-
+```
+curl -F "file=@test.csv" http://localhost:{port}/api/import/test1
+```
 Получение последних значений:
-
-curl http://localhost:\<port>/api/files/test1/values/latest?count=10
-
+```
+curl http://localhost:{port}/api/files/test1/values/latest?count=10
+```
 Получение агрегированных результатов:
-
-curl http://localhost:\<port>/api/results?fileName=test1
-
+```
+curl http://localhost:{port}/api/results?fileName=test1
+```
