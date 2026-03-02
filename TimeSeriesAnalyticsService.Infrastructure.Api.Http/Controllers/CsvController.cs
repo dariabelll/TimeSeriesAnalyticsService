@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 using TimeSeriesAnalyticsService.Application.UseCases;
 using TimeSeriesAnalyticsService.Application.Services.Executions;
 
-namespace TimeSeriesAnalyticsService.Infrastructure.Controllers;
+namespace TimeSeriesAnalyticsService.Infrastructure.Api.Http.Controllers;
 
 [ApiController]
 [Route("api/import")]
@@ -13,16 +13,16 @@ public class CsvController(ImportTimeSeriesCsv importerCsv) : ControllerBase
     [Consumes("multipart/form-data")]
     public async Task<IActionResult> ImportTimeSeries(
         [FromRoute] string fileName,
-        [FromForm] IFormFile csvFile, 
+        [FromForm] IFormFile file, 
         CancellationToken cancellationToken)
     {
-        if (csvFile == null) return BadRequest("File is required");
+        if (file == null) return BadRequest("File is required");
 
-        if (csvFile.Length == 0) return BadRequest("File is empty");
+        if (file.Length == 0) return BadRequest("File is empty");
 
         try
         {
-            using var stream = csvFile.OpenReadStream();
+            using var stream = file.OpenReadStream();
 
             var result = await importerCsv.ExecuteAsync(fileName, stream, cancellationToken);
 

@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using TimeSeriesAnalyticsService.Application.Services;
 
-namespace TimeSeriesAnalyticsService.Infrastructure.Controllers;
+namespace TimeSeriesAnalyticsService.Infrastructure.Api.Http.Controllers;
 
 [ApiController]
 [Route("api/files")]

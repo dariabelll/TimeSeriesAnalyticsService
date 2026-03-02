@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TimeSeriesAnalyticsService.Application\TimeSeriesAnalyticsService.Application.csproj" />
+    <ProjectReference Include="..\TimeSeriesAnalyticsService.Infrastructure.DataAccess.EntityFramework\TimeSeriesAnalyticsService.Infrastructure.DataAccess.EntityFramework.csproj" />
   </ItemGroup>
 
 </Project>

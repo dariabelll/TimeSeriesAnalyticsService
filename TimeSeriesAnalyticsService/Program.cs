@@ -6,13 +6,17 @@ using TimeSeriesAnalyticsService.Application.UseCases;
 using TimeSeriesAnalyticsService.Application.Validation;
 using TimeSeriesAnalyticsService.Domain.Services;
 using TimeSeriesAnalyticsService.Infrastructure.DataAccess.EntityFramework;
+using TimeSeriesAnalyticsService.Infrastructure.Api.Http.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddApplicationPart(typeof(CsvController).Assembly);;
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SupportNonNullableReferenceTypes();
+});
 
 builder.Services.AddDbContext<TimeSeriesDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("Default")));
