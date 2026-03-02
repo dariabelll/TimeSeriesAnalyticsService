@@ -116,37 +116,39 @@ Date;ExecutionTime;Value
 
 2. Создать базу данных в PostgreSQL:
 
-Создать БД с именем:
+    Создать БД с именем:
 
-timeseries
+    timeseries
 
 3. Настроить строку подключения:
 
-Скопировать файл:
+    Скопировать файл:
 
-copy appsettings.Development.example.json appsettings.Development.json
+    copy appsettings.Development.example.json appsettings.Development.json
 
-Открыть appsettings.Development.json и указать пароль PostgreSQL:
+    Открыть appsettings.Development.json и указать пароль PostgreSQL:
 
-{
-  "ConnectionStrings": {
-    "Default": "Host=localhost;Port=5432;Database=timeseries;Username=postgres;Password=YOUR_PASSWORD"
-  }
-}
+    ```
+    {
+    "ConnectionStrings": {
+        "Default": "Host=localhost;Port=5432;Database=timeseries;Username=postgres;Password=YOUR_PASSWORD"
+        }
+    }
+    ```
 
-Заменить YOUR_PASSWORD на реальный пароль.
+    Заменить YOUR_PASSWORD на реальный пароль.
 
 4. Запустить проект:
 
-dotnet run
+    dotnet run
 
 5. Открыть Swagger:
 
-После запуска в консоли будет указан адрес приложения. Swagger доступен по адресу:
+    После запуска в консоли будет указан адрес приложения. Swagger доступен по адресу:
 
-http://localhost:<port>/swagger
+    http://localhost:<port>/swagger
 
-Порт можно посмотреть в консоли после выполнения dotnet run.
+    Порт можно посмотреть в консоли после выполнения dotnet run.
 
 ---
 
@@ -154,13 +156,13 @@ http://localhost:<port>/swagger
 
 Импорт CSV:
 
-curl -F "file=@test.csv" http://localhost:<port>/api/import/test1
+curl -F "file=@test.csv" http://localhost:\<port>/api/import/test1
 
 Получение последних значений:
 
-curl http://localhost:<port>/api/files/test1/values/latest?count=10
+curl http://localhost:\<port>/api/files/test1/values/latest?count=10
 
 Получение агрегированных результатов:
 
-curl http://localhost:<port>/api/results?fileName=test1
+curl http://localhost:\<port>/api/results?fileName=test1
 
