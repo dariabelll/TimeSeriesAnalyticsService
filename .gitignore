@@ -203,3 +203,5 @@ _ReSharper*/
 *.pdb
 *.exe.config
 *.user
+
+TimeSeriesAnalyticsService\appsettings.Development.json
