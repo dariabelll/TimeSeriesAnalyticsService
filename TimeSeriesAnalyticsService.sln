@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSeriesAnalyticsService.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSeriesAnalyticsService.Domain", "TimeSeriesAnalyticsService.Domain\TimeSeriesAnalyticsService.Domain.csproj", "{19A88C1C-988E-486E-AF2C-2CC1083E94DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSeriesAnalyticsService.Infrastructure", "TimeSeriesAnalyticsService.Infrastructure\TimeSeriesAnalyticsService.Infrastructure.csproj", "{4382DF34-CADE-4F30-8010-90DF74D404BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSeriesAnalyticsService.Infrastructure.DataAccess.EntityFramework", "TimeSeriesAnalyticsService.Infrastructure.DataAccess.EntityFramework\TimeSeriesAnalyticsService.Infrastructure.DataAccess.EntityFramework.csproj", "{9780E1BB-18C9-43BD-BF49-54738A6D9689}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSeriesAnalyticsService.Infrastructure.Api.Http", "TimeSeriesAnalyticsService.Infrastructure.Api.Http\TimeSeriesAnalyticsService.Infrastructure.Api.Http.csproj", "{8E89C353-EA58-453C-BF71-2275F6232A5E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,9 +34,13 @@ Global
 		{19A88C1C-988E-486E-AF2C-2CC1083E94DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19A88C1C-988E-486E-AF2C-2CC1083E94DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19A88C1C-988E-486E-AF2C-2CC1083E94DA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4382DF34-CADE-4F30-8010-90DF74D404BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4382DF34-CADE-4F30-8010-90DF74D404BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4382DF34-CADE-4F30-8010-90DF74D404BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4382DF34-CADE-4F30-8010-90DF74D404BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9780E1BB-18C9-43BD-BF49-54738A6D9689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9780E1BB-18C9-43BD-BF49-54738A6D9689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9780E1BB-18C9-43BD-BF49-54738A6D9689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9780E1BB-18C9-43BD-BF49-54738A6D9689}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E89C353-EA58-453C-BF71-2275F6232A5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E89C353-EA58-453C-BF71-2275F6232A5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E89C353-EA58-453C-BF71-2275F6232A5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E89C353-EA58-453C-BF71-2275F6232A5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

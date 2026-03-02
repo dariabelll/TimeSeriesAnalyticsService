@@ -11,17 +11,20 @@ public class CsvController(ImportTimeSeriesCsv importerCsv) : ControllerBase
 {
     [HttpPost("{fileName}")]
     [Consumes("multipart/form-data")]
-    public async Task<IActionResult> ImportTimeSeries([FromForm] IFormFile csvFile, CancellationToken cancellationToken)
+    public async Task<IActionResult> ImportTimeSeries(
+        [FromRoute] string fileName,
+        [FromForm] IFormFile csvFile, 
+        CancellationToken cancellationToken)
     {
-        if (csvFile == null) throw new ArgumentNullException(nameof(csvFile));
+        if (csvFile == null) return BadRequest("File is required");
 
-        if (csvFile.Length == 0) throw new ArgumentException("File is empty", nameof(csvFile));
+        if (csvFile.Length == 0) return BadRequest("File is empty");
 
         try
         {
             using var stream = csvFile.OpenReadStream();
 
-            var result = await importerCsv.ExecuteAsync(stream, cancellationToken);
+            var result = await importerCsv.ExecuteAsync(fileName, stream, cancellationToken);
 
             return Ok(result);
         }
